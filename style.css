@@ -1,0 +1,72 @@
+/*CSS*/
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title></title> 
+<style type="text/css"> 
+body { 
+font-family: sans-serif; 
+padding: 24px; 
+} 
+p { 
+text-align: justify; 
+line-height: 1.5em; 
+} 
+blockquote { 
+font: 15pt cursive; 
+background-color: #cccccc; 
+padding: .5em; 
+border: 2px dotted; 
+} 
+address { 
+margin-left: 50%; 
+font-family: courier,monospace; 
+} 
+</style> 
+</head> 
+<body> 
+<p>This is a test:</p> 
+<blockquote>Quotations.</blockquote> 
+<p>This is a test:</p> 
+<address> 
+Author<br/> 
+a@gmail.com 
+</address> 
+
+
+{style="background-color: lavender" 
+}
+
+h1 {font-size: 50;}
+
+p {font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p { color: #000;}
+
+{style="background-color:DodgerBlue;"}
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+
+body * {
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  
+  #halfWidthContainer {
+    width: 50%
+  }
+  
+  .half {
+    width: 50%;
+  }
+  
+  .quarter {
+    width: 25%;
+  }
+
+</body>
+</html>
