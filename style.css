@@ -1,59 +1,200 @@
 /*CSS*/
 
-<!DOCTYPE html> 
-<html> 
-<head> 
-<title></title> 
-<style type="text/css"> 
-body { 
-font-family: sans-serif; 
-padding: 24px; 
-} 
+
+body {background-color: rgb(255, 255, 255);
+margin: 0px;
+padding:0px}
+body {font-family: Arial;}
+
+/* Style da aba (tab) */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Style dos botões dentro da aba */
+.tab button {
+  background-color: none; /* cor do elemento pai */
+  float: left;
+  outline:chartreuse;
+  cursor: pointer;
+  padding: 2px;
+  transition: 0.3s;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+border-left: 2px;
+border-right: 20px;
+border-left: 20px;
+}
+
+/* Muda a cor do fundo do botão on hover */
+.tab button:hover {
+  background-color: #ffbf60;
+}
+
+/* Cria estilo da aba ativa/atual - tabalinks class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Estilo do conteúdo de cada aba */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-bottom: 1px solid #131111;
+  border-top: none;
+}
+
+/* Estilo do botão de fechamento "x" */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+/* Muda a cor botão de fechamento on hover */
+.topright:hover {color: red;}
+
+#conteudo {
+  loading="lazy" width: 70%;
+  float: right;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  #menu {
+		loading="lazy" width: 10%;
+		margin: 5px; padding: 5px;
+		float:right;
+        text-align: justify;
+display:flex;
+flex-direction: column;
+align-items: :right;
+width:20%;
+overflow:hidden;
+		}
+
+    #menu a:link {
+      background: #F5F5F5;
+      color: #ffc400;
+      font-weight:bolder;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 24px;
+      text-align: justify;
+display:flex;
+flex-direction: column;
+align-items: right;
+width:100%;
+overflow:hidden;
+      }
+      
+      #menu a:hover {
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        border-left: 0.01px;
+        border-bottom: 0.01px;
+        border-right: 0.01px;
+        border-color: #000000;
+        border-top: 0.01px;
+        border-top: #cccccc;
+        }
+    
+.primeiro-bloco{
+
+background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+border: 0px; 
+margin-bottom:5px;
+margin-left: 10px;
+text-align: justify;
+display:flex;
+flex-direction: column;
+align-items: :left;
+width:70%;
+overflow:hidden;
+}
+
+.primeiro-bloco p{
+font-size: 24px;
+width: 70%;
+font-family: 'Courier New', Courier, monospace;
+}
+
 p { 
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;padding: 24px; 
 text-align: justify; 
 line-height: 1.5em; 
 } 
+
 blockquote { 
-font: 15pt cursive; 
+font: 24pt;
+font-family: 'Courier New', Courier, monospace; 
 background-color: #cccccc; 
-padding: .5em; 
-border: 2px dotted; 
+padding: .5em;  
 } 
+
 address { 
 margin-left: 50%; 
 font-family: courier,monospace; 
 } 
-</style> 
-</head> 
-<body> 
-<p>This is a test:</p> 
-<blockquote>Quotations.</blockquote> 
-<p>This is a test:</p> 
-<address> 
-Author<br/> 
-a@gmail.com 
-</address> 
 
-
-{style="background-color: lavender" 
+.segundo-bloco{
+    background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+    border: 0px; 
+    margin-bottom:5px;
+    margin-left: 20px;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    align-items: :center;
+    width:70%;
+    overflow:hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {font-size: 50;}
-
-p {font-family: Georgia, 'Times New Roman', Times, serif;
+.segundo-bloco p{
+    background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+    border: 0px; 
+    margin-bottom:5px;
+    margin-left: 20px;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    align-items: :center;
+    width:70%;
+    overflow:hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
-p { color: #000;}
 
-{style="background-color:DodgerBlue;"}
 
-<p style="background-color:Tomato;">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</p>
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+  font-size: 50px;
+}
+
 
 body * {
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 0px;
+    background-color:rgb(255, 255, 255);
   }
   
   #halfWidthContainer {
@@ -68,5 +209,3 @@ body * {
     width: 25%;
   }
 
-</body>
-</html>
